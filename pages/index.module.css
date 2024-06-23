@@ -1,0 +1,236 @@
+.pageWrapper {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.sale {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  padding: 20px 0;
+}
+
+.sale > p {
+  font-size: 9vw; 
+  height: 100%;
+  width: 100%;
+  margin: 5px 0;
+  text-align: center;
+  font-family: var(--font-theinhardt);
+}
+
+.catagory {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.catagory > p {
+  font-size: 5vw;
+  font-family: 'Roboto Condensed', sans-serif;
+  cursor: pointer;
+  flex: 1;
+  text-align: center;
+  min-width: 150px;
+  max-width: 45%;
+  word-wrap: break-word;
+  margin: 10px 0;
+}
+
+.firstDiv, .thirdDiv, .secondDiv {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.firstDiv > div, .secondDiv > div {
+  width: 43%;
+}
+
+.firstDiv > div > p {
+  font-size: 19px;
+  width: 90%;
+  margin-top: -10px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.firstDiv > div > img, .secondDiv > div > img {
+  width: 100%;
+}
+
+.firstDiv > div > div, .secondDiv > div > div {
+  display: flex;
+}
+
+.firstDiv > div > div > p:first-child, .secondDiv > div > div > p:first-child {
+  font-size: 18px;
+}
+
+.firstDiv > div > div > p:last-child, .secondDiv > div > div > p:last-child {
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  margin-left: 23px;
+  margin-top: 18px;
+}
+
+.secondDiv > div {
+  width: 30%;
+}
+
+.secondDiv > div > div > p:first-child {
+  font-size: 15px;
+}
+
+.secondDiv > div > div > p:last-child {
+  font-size: 19px;
+  font-family: 'Nunito', sans-serif;
+  margin-left: 20px;
+  margin-top: 14px;
+}
+
+.firstDiv > div > button {
+  padding: 12px 20px;
+  background-color: white;
+  border: 0.5px solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.thirdDiv > div:first-child {
+  display: block;
+  font-family: 'Nunito', sans-serif;
+}
+
+.thirdDiv > div:first-child > h1 {
+  margin-top: 1px;
+}
+
+.thirdDiv > div:first-child > p {
+  margin-top: 75px;
+}
+
+.thirdDiv > div {
+  width: 18%;
+  height: 130px;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding: 10px 0;
+  display: flex;
+}
+
+.thirdDiv > div > img {
+  width: 90px;
+  height: 130px;
+}
+
+.thirdDiv > div > div {
+  margin-left: 10px;
+  color: rgb(142, 140, 140);
+  font-family: 'Nunito', sans-serif;
+}
+
+.thirdDiv > div > div > p:first-child {
+  margin-top: 0;
+}
+
+.thirdDiv > div > div > p:last-child {
+  margin-top: 75px;
+}
+
+.fifthDiv {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.fifthDiv > p:first-child {
+  width: 80%;
+  font-size: 90px;
+  /* font-family: 'Noto Sans', sans-serif; */
+  font-family: var(--font-theinhardt);
+  color: rgb(49, 49, 49);
+  margin: auto;
+}
+
+.fifthDiv > p {
+  width: 90%;
+  font-size: 60px;
+  /* font-family: 'Noto Serif', serif; */
+  font-family: var(--font-theinhardt);
+  color: rgb(49, 49, 49);
+  margin: auto;
+  margin-top: 20px;
+}
+
+.fifthDiv > button {
+  padding: 12px 20px;
+  background-color: white;
+  border: 0.5px solid grey;
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+
+  .pageWrapper {
+      padding: 20px;
+  }
+
+  .sale > p {
+      font-size: 8vw;
+      text-align: center;
+      padding-top: 20px;
+      margin-top: 0px;
+  }
+
+  .catagory {
+      margin-top: 0;
+  }
+
+  .catagory > p {
+      font-size: 4vw;
+  }
+
+  .firstDiv, .secondDiv, .thirdDiv {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+
+  .firstDiv > div, .secondDiv > div, .thirdDiv > div {
+      width: 100%;
+  }
+
+  .firstDiv > div > button, .fifthDiv > button {
+      width: 100%;
+      margin-bottom: 30px;
+  }
+
+  .thirdDiv {
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .thirdDiv > div {
+      width: 90%;
+  }
+
+  .fifthDiv > p:first-child {
+      width: 90%;
+      font-size: 60px;
+  }
+
+  .fifthDiv > p {
+      width: 100%;
+      font-size: 40px;
+  }
+}

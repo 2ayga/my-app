@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  /* line-height: normal; */
+}
+
+.popup-overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+}
+
+:root {
+  --font-theinhardt: "Theinhardt";
+  --font-adobe-text-pro: "Adobe Text Pro";
+}
